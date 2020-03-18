@@ -17,3 +17,7 @@ def getProgram(request, program_name):
     return HttpResponse(json.dumps(data), status=200)
 
 
+def helloWorld(request):
+    return HttpResponse(json.dumps({'Status': 'Hello Django World!'}), status=200)
+
+
